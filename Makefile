@@ -34,7 +34,7 @@ install: 	| $(VENV) $(EXE)
 	@if ! $$(crontab -l | grep -q $(P_WD)/$(BACKUPS)); then \
 	  { crontab -l; \
 	    echo "0 1 * * * find $(P_WD)/$(BACKUPS)/ -ctime +$(DAYS) -delete; $(P_WD)/$(EXE)"; \
-		} | crontab -u root - ; \
+		} | crontab - ; \
 	   echo "Daily rotation set to $(DAYS) last backups"; \
 	   echo "Remember to set the configuration (ref. zbx_config.ini)"; \
 	fi;
