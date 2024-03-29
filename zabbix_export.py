@@ -183,7 +183,7 @@ if __name__ == "__main__":
         zipfile = os.path.join(args.dir, f"zbx_export_{timestamp}.zip")
         with zip(zipfile, mode='w') as archive:
             for f in zip_files:
-                archive.write(f)
+                archive.write(f, arcname = os.path.basename(f))
         log.info(f"Compressed configuration file: {zipfile}")
 
 
