@@ -2,8 +2,6 @@
 #
 #      Set up the Zabbix Backup Tool
 #
-# 	Author: Costis Contopoulos, for Atos 2023(c)
-#
 # ~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~=
 
 SHELL 		:= /bin/bash
