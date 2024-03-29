@@ -66,7 +66,7 @@ def mkdir(path: str) -> None:
 def readConfig(filepath: str, delim: str = '=') -> dict:
     try:
         with open(filepath) as f:
-            l = [line.split("=") for ln in f.readlines() \
+            l = [line.split(delim) for ln in f.readlines() \
                  if (line := ln.strip()) and not line.startswith('#')]
             return {key.strip().strip('"'): value.strip().strip('"') for key, value in l}
     except FileNotFoundError as e:
