@@ -21,7 +21,7 @@ CWD=$$(dirname $$(realpath $$0))
 
 source $${CWD}/.venv/bin/activate
 
-no_proxy=* $${CWD}/$(SCRIPT) -d $(BACKUPS) -z $$@
+no_proxy=* $${CWD}/$(SCRIPT) -d $${CWD}/$(BACKUPS) -z $$@
 deactivate
 endef
 
