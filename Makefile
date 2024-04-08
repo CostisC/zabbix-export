@@ -49,6 +49,7 @@ venv: | $(VENV)
 $(EXE):
 	@echo "$$_script" > $@
 	@chmod +x $@
+	@chmod +x $(SCRIPT)
 
 
 $(VENV):

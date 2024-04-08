@@ -63,7 +63,7 @@ Navigate to *Users -> API tokens* and choose **Create API token** for a user of 
 Provide the Zabbix Web server's connection details and the credentials of a user of Admin roles to the script (refer to `getToken.--help`).  
 E.g.:  
 ```bash
-$ ./getToken.py -s 10.10.10.10 -u Admin -p p@sw0rd
+$ python getToken.py -s 10.10.10.10 -u Admin -p p@sw0rd
 ```
 
 Finally, provide the server's connection string and the token in the **zbx_config.ini** file. 
